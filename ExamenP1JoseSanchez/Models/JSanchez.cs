@@ -12,7 +12,7 @@ namespace ExamenP1JoseSanchez.Models
         [Display(Name = "Es de la Ulda")]
         public bool EsdelaUdla { get; set; }
        
-        public DateOnly FechaNacimeinto { get; set; }
+        public DateTime FechaNacimeinto { get; set; }
         [ForeignKey("CarreraIdCarrera")]
         public int CarreraIdCarrera { get; set; }
         public Carrera? Carrera { get; set; }
