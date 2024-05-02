@@ -8,7 +8,7 @@ namespace ExamenP1JoseSanchez.Models
         public int IdCarrera { get; set; }
         [Required]
         public string? NombreCarrera { get; set; }
-        [MaxLengthAttribute]
+        
         public string? Campus {  get; set; }
         public int NumSemestre { get; set; }
 
