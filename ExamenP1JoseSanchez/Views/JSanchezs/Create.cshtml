@@ -13,7 +13,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
+                <label asp-for="Nombre" class="control-label">Nombre:</label>
                 <input asp-for="Nombre" class="form-control" />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
@@ -23,13 +23,22 @@
                 </label>
             </div>
             <div class="form-group">
-                <label asp-for="FechaNacimeinto" class="control-label"></label>
+                <label asp-for="FechaNacimeinto" class="control-label">Fecha de Nacimiento:</label>
                 <input asp-for="FechaNacimeinto" class="form-control" />
                 <span asp-validation-for="FechaNacimeinto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CarreraIdCarrera" class="control-label"></label>
-                <select asp-for="CarreraIdCarrera" class ="form-control" asp-items="ViewBag.CarreraIdCarrera"></select>
+                <label asp-for="CarreraIdCarrera" class="control-label">Carrera: </label>
+                <label for="miComboBox">Selecciona una opción:</label>
+                <select id="miComboBox" name="miComboBox">
+                    <option value="opcion1">SOFTWARE</option>
+                    <option value="opcion2">MEDICINA</option>
+                    <option value="opcion3">MARKETING DIGITAL</option>
+                    <option value="opcion3">TURISMO</option>
+                    <option value="opcion3">DISEÑO GRAFICO (ESTA QUERIA SEGUIR YO)</option>
+                </select>
+                
+
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
