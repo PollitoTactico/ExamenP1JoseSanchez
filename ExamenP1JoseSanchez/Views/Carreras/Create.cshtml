@@ -19,8 +19,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Campus" class="control-label"></label>
-                <input asp-for="Campus" class="form-control" />
-                <span asp-validation-for="Campus" class="text-danger"></span>
+                
+                <label for="miComboBox">Selecciona una opción:</label>
+                <select id="miComboBox" name="miComboBox">
+                    <option value="opcion1">UDLA GRANADOS</option>
+                    <option value="opcion2">UDLA PARK</option>
+                    <option value="opcion3">UDLA COLON</option>
+                </select>
+               
             </div>
             <div class="form-group">
                 <label asp-for="NumSemestre" class="control-label"></label>
